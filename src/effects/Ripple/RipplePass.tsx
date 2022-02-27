@@ -1,10 +1,10 @@
 import * as THREE from "three";
 import { useEffect, useMemo, useRef } from "react";
-import { extend, useFrame } from "@react-three/fiber";
+import { useFrame } from "@react-three/fiber";
 import { ShaderPass } from "three/examples/jsm/postprocessing/ShaderPass";
 import Ripple from "./Ripple";
 
-extend({ ShaderPass });
+// mostly from https://github.com/nemutas/r3f-homunculus/tree/main/src/components/postprocessing
 
 const RipplePass = () => {
     const shaderPassRef = useRef<ShaderPass>();
