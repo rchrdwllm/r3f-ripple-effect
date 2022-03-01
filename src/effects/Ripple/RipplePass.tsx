@@ -35,7 +35,7 @@ const RipplePass = () => {
                 vec4 disp = texture2D(uDisplacement, uv);
                 float theta = disp.r * 1.0 * 3.141592653589;
                 vec2 dir = vec2(sin(theta), cos(theta));
-                uv += dir * disp.r * 0.07;
+                uv += dir * disp.r * 0.03;
 
                 gl_FragColor = texture2D(tDiffuse, uv);
             }
