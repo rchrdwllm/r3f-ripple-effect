@@ -4,7 +4,8 @@ import { useFrame } from "@react-three/fiber";
 import { ShaderPass } from "three/examples/jsm/postprocessing/ShaderPass";
 import Ripple from "./Ripple";
 
-// mostly from https://github.com/nemutas/r3f-homunculus/tree/main/src/components/postprocessing
+// got to figure out how to turn this into a post-processing effect
+// thanks to https://github.com/nemutas/r3f-homunculus/tree/main/src/components/postprocessing
 
 const RipplePass = () => {
     const shaderPassRef = useRef<ShaderPass>();
